@@ -1,0 +1,58 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 100,
+  "framesPerSecond": 10,
+  "opacity": null,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 96,
+    "height": 96
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "unHover",
+      "startFrameIndex": 0,
+      "endFrameIndex": 0,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "isHover",
+      "startFrameIndex": 1,
+      "endFrameIndex": 1,
+      "speed": 1
+    },
+    {
+      "id": "2",
+      "name": "cross",
+      "startFrameIndex": 2,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "3",
+      "name": "circle",
+      "startFrameIndex": 3,
+      "endFrameIndex": 3,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

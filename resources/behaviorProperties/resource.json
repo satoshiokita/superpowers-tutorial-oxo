@@ -1,0 +1,22 @@
+{
+  "behaviors": {
+    "GlobalBehavior": {
+      "scriptId": "6",
+      "line": 245,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "PlayerBehavior": {
+      "scriptId": "7",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ABehavior": {
+      "scriptId": "8",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}
