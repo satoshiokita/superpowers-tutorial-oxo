@@ -201,6 +201,10 @@ namespace Game {
   }
   
   function displayScreen() {
+    let actor:Sup.Actor = Sup.getActor("Screen");
+    actor.spriteRenderer.setAnimation(turn);
+    
+    /*
     // Create a new Screen actor.
     let screen = new Sup.Actor("Screen");
     // Create a new SpriteRenderer and attach it to the Screen Actor
@@ -211,12 +215,15 @@ namespace Game {
     screen.addBehavior(ScreenBehavior);
     // Set the frame position to the center (0, 0) and -2 on z axis to fit in the camera view
     screen.setPosition(0, 0, -2);
+    */
     // stop the game turns
     turn = "end";
     
     function displayFrame() {
       // Set the frame position to the center (0, 0) and 4 on z axis to be in front of the board background.
-      screen.setPosition(0, 0, 4);
+      //screen.setPosition(0, 0, 4);
+      //actor.setPosition(0, 0, 4);
+      actor.setVisible(true);
     }
     Sup.setTimeout(1000, displayFrame);
   }
@@ -242,14 +249,3 @@ namespace Game {
     turn = "cross";
   }
 }
-
-class GlobalBehavior extends Sup.Behavior {
-  awake() {
-    
-  }
-
-  update() {
-    
-  }
-}
-Sup.registerBehavior(GlobalBehavior);
